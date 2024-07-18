@@ -1,0 +1,166 @@
+.root {
+  :global {
+    .ant-table-row-level-0 {
+      .nameColumn {
+        color: var(--cl-grey-35);
+        font-weight: var(--font-semi-bold);
+      }
+
+      .dateColumn {
+        font-size: var(--font-size-mini);
+      }
+    }
+
+    td,
+    th {
+      vertical-align: middle;
+    }
+
+    thead {
+      tr {
+        th {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .ant-table-thead > tr > th {
+      border: 0.5px solid var(--cl-grey-85) !important;
+    }
+
+    .ant-table-tbody > tr > td {
+      border: 0.5px solid var(--cl-grey-85) !important;
+      color: var(--cl-grey-26);
+    }
+  }
+}
+
+.justifyContent {
+  padding: 32px 6% 10px;
+}
+
+.buttonGroup {
+  display: flex;
+  margin-top: 32px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: var(--font-size-mini);
+  margin-bottom: 25px;
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+  }
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin-bottom: 64px;
+}
+
+.generalInformation {
+  display: flex;
+  margin-bottom: 40px;
+
+  .avatarContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 48px;
+
+    .avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .roleTitle {
+      width: 80px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: 8px;
+      background-color: var(--cl-grey-92);
+      color: var(--cl-grey-26);
+      font-size: var(--font-size-mini);
+    }
+  }
+
+  .informationContent {
+    background-color: var(--cl-grey-98);
+
+    :global {
+      table {
+        border: 0.5px solid var(--cl-grey-75);
+      }
+
+      .ant-descriptions-row {
+        border: 0.5px solid var(--cl-grey-75);
+
+        span {
+          font-size: var(--font-size-sm);
+          line-height: 15px;
+        }
+
+        th,
+        td {
+          padding: 9px 20px 8px;
+          border: none;
+        }
+
+        th {
+          color: var(--cl-grey-100);
+        }
+
+        td {
+          color: var(--cl-grey-26);
+        }
+      }
+
+      .ant-descriptions-item-label {
+        background-color: var(--cl-primary-950);
+        width: 29.6%;
+      }
+    }
+  }
+}
+
+.contentCol {
+  width: calc(100% - 80px - 48px);
+}
+
+.labelCol {
+  width: 80px;
+
+  margin-right: 48px;
+}
+
+.tableContent {
+  margin-top: 40px;
+
+  :global {
+    .ant-table.ant-table-bordered > .ant-table-container {
+      border: none;
+    }
+    table {
+      border: none !important;
+    }
+    .ant-table {
+      border: 0.5px solid var(--cl-grey-85);
+    }
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}

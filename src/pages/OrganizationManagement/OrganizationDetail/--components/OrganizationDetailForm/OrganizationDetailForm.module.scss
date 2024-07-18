@@ -1,0 +1,46 @@
+.wrapper {
+  :global {
+    .ant-tabs-nav {
+      padding-left: 6%;
+    }
+
+    .ant-tabs-tab {
+      .ant-tabs-tab-btn {
+        font-size: var(--font-size-md);
+        color: var(--cl-grey-55);
+      }
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: var(--cl-primary-600);
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      height: 4px !important;
+    }
+
+    .ant-tabs-nav::before {
+      border-width: 0;
+    }
+  }
+}
+
+.answerTab {
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.justifyContent {
+  padding: 0 6%;
+}
+
+.tabHasScrollBarTable {
+  @media (max-width: 1300px) {
+    padding-right: 5.7%;
+  }
+}

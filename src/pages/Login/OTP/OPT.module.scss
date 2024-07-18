@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cl-primary-850);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :global {
+    .ant-form-item-explain-error {
+      text-align: start;
+    }
+  }
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  background-color: var(--cl-grey-100);
+}
+
+.otpContent {
+  text-align: center;
+  width: 37.5%;
+  background-color: var(--cl-grey-100);
+}
+
+.header {
+  border-bottom: 1px solid var(--cl-grey-85);
+  padding: 16px 0 16px 20px;
+  width: 100%;
+
+  a {
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-mini);
+  }
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: var(--font-size-mini);
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.description {
+  color: var(--cl-grey-15);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.otpFormItem {
+  margin-bottom: 0;
+
+  :global {
+    input {
+      text-align: center;
+    }
+  }
+}
+
+.errorText {
+  color: var(--cl-red-6);
+  font-size: var(--font-size-mini);
+  margin-top: 5px;
+  visibility: hidden;
+  height: 15px;
+}
+
+.visibleErrorText {
+  visibility: visible;
+}
+
+.resentButton {
+  margin-bottom: 32px;
+
+  span {
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-xs);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.submitFormItem {
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.submitButton {
+  width: 120px;
+  height: 32px;
+}

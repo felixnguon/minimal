@@ -1,0 +1,207 @@
+.loadingContent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContent {
+  padding: 32px 6% 10px;
+
+  :global {
+    .ant-form {
+      .ant-form-item {
+        .ant-col.ant-col-3 {
+          flex: 0 0 104px;
+        }
+
+        .ant-form-item-label {
+          label {
+            color: var(--cl-grey-15);
+          }
+        }
+
+        .ant-input {
+          color: var(--cl-grey-26);
+        }
+      }
+    }
+
+    .ant-select-selection-item {
+      color: var(--cl-grey-26);
+    }
+
+    .ant-checkbox-wrapper {
+      span:not(.ant-checkbox) {
+        padding-right: 0;
+        color: var(--cl-grey-15);
+      }
+    }
+
+    .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background-color: var(--cl-grey-92);
+
+      .ant-select-selection-item {
+        color: var(--cl-grey-75);
+      }
+    }
+  }
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 32px;
+  margin-bottom: 10px;
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-xs);
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 1px;
+      -moz-text-underline-offset: 1px;
+      -ms-text-underline-offset: 1px;
+      -o-text-underline-offset: 1px;
+      -webkit-text-underline-offset: 1px;
+    }
+  }
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  color: var(--cl-grey-35);
+}
+
+.titleSectionRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.previewButton {
+  margin-right: 24px;
+
+  :global {
+    .ant-btn-text {
+      background-color: var(--cl-grey-95);
+      color: var(--cl-grey-55);
+      margin-right: 16px;
+      padding: 4px 5px;
+      border: none;
+      box-shadow: none;
+
+      svg {
+        margin-right: 9px;
+        transform: translateY(2px);
+      }
+
+      &:hover {
+        color: var(--cl-secondary-800);
+      }
+    }
+  }
+}
+
+.languageOption {
+  color: var(--cl-grey-26);
+}
+
+.inlineFormItem {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.justifyRightFormItem {
+  margin-top: 10px;
+  margin-bottom: 46px;
+
+  :global {
+    .ant-checkbox-wrapper {
+      float: right;
+    }
+  }
+}
+
+.copyVersionFormItem {
+  position: relative;
+  margin-bottom: 0;
+
+  .copyVersionButton {
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.hideRequiredFromSpot {
+  margin-bottom: 30px;
+
+  :global {
+    .ant-form-item-label {
+      label.ant-form-item-required {
+        &::before {
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.readOnlyQuill {
+  :global {
+    .ql-toolbar {
+      display: none;
+    }
+
+    .ql-container {
+      border: none;
+      background: var(--cl-grey-96);
+
+      .ql-editor {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.actionButtons {
+  :global {
+    .ant-form-item-control-input-content {
+      margin-left: 104px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .ant-btn {
+      min-width: 120px;
+    }
+  }
+
+  margin-top: 56px;
+}
+
+.copyVersionButtonBottom {
+  margin-top: 14px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.copyDataTitle {
+  margin-top: 32px;
+}
+
+.modalCancel {
+  p {
+    color: var(--cl-grey-15);
+  }
+}

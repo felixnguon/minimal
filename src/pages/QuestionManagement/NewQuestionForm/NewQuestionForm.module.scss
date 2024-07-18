@@ -1,0 +1,124 @@
+.root {
+  :global {
+    .ant-input {
+      color: var(--cl-grey-26);
+    }
+
+    .ant-form-item-label > label::after {
+      display: none;
+    }
+
+    .ant-form-item-label > label {
+      color: var(--cl-grey-15);
+    }
+
+    .ant-form-item-label {
+      display: flex;
+      justify-content: flex-start;
+      width: 120px;
+      margin-right: 24px;
+    }
+
+    .ant-form-item-label > :not(.ant-form-item-required) {
+      margin-left: 12px;
+    }
+
+    .ant-upload.ant-upload-select-picture-card {
+      width: 213px;
+      height: 120px;
+      background-color: var(--cl-grey-100);
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    .ant-select-item {
+      color: var(--cl-grey-15);
+    }
+
+    .ant-checkbox-wrapper {
+      color: var(--cl-grey-15);
+    }
+
+    .ant-form-item-control-input-content .ant-checkbox-wrapper {
+      margin-left: 0 !important;
+    }
+
+    #topic_add_form_status .ant-radio-wrapper:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.uploadDescription {
+  color: var(--cl-grey-26);
+}
+
+.uploadVideo {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.uploadVideoTitle {
+  font-size: var(--font-size-mini);
+  margin-bottom: 12px !important;
+  color: var(--cl-grey-15);
+}
+
+.pictures {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formButtons {
+  margin-left: 144px;
+  padding-top: 16px;
+}
+
+.addSolutionBtn {
+  color: var(--cl-grey-55);
+  padding: 0;
+  height: fit-content;
+}
+
+.addSolutionBtnWrapper {
+  margin-top: 36px;
+}
+
+.addSolutionCountWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.expiredAtLabel {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+  font-weight: 300;
+}
+
+.areaNote {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+}
+
+.actionTBtn {
+  min-width: 120px;
+}
+
+.uploadItem {
+  :global {
+    label {
+      height: 20px;
+    }
+  }
+}
+
+.expiredItem {
+  margin-bottom: 30px;
+}
+
+.remarksItem {
+  margin-bottom: 35px;
+}

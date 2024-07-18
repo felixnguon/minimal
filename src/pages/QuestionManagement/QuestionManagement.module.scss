@@ -1,0 +1,45 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 32px 16px;
+  line-height: 1;
+}
+
+.tabs {
+  margin: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  :global {
+    .ant-tabs-top > .ant-tabs-nav::before {
+      border: none;
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 8px;
+    }
+
+    .ant-tabs-tab-btn {
+      font-size: var(--font-size-md);
+      line-height: 22px;
+    }
+  }
+}
+
+.title {
+  color: var(--cl-grey-35);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+}
+
+.count {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-mini);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 16px;
+}

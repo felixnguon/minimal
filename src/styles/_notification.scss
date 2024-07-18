@@ -1,0 +1,58 @@
+.ant-notification-notice-content {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-notification {
+  left: var(--position-left-noti);
+  right: 0 !important;
+  margin-right: 0;
+  top: 56px !important;
+  opacity: 0.9;
+
+  .ant-notification-notice {
+    padding: 27px 24px;
+  }
+
+  .ant-notification-notice-close {
+    top: 32px;
+    right: 32px;
+  }
+
+  .notification-success {
+    background-color: var(--cl-green-2);
+    border: 1px solid var(--cl-green-6);
+    width: 100%;
+    max-width: unset;
+
+    .ant-notification-notice-message {
+      margin-bottom: 0;
+    }
+
+    .ant-notification-notice-message {
+      color: var(--cl-secondary-8);
+    }
+
+    &.hasGreenMessage {
+      .ant-notification-notice-message {
+        color: var(--cl-secondary-800);
+        font-size: var(--font-size-sm);
+      }
+    }
+  }
+
+  .notification-error {
+    background-color: #fdf1f0;
+    border: 1px solid #d95259;
+    width: 100%;
+    max-width: unset;
+
+    .ant-notification-notice-message {
+      margin-bottom: 0;
+    }
+
+    .ant-notification-notice-message {
+      color: var(--cl-red-8);
+    }
+  }
+}

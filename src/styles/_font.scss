@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Hiragino Sans';
+  // font-weight: 400;
+  src: url('../assets/fonts/Hiragino Sans W3.woff2') format('woff2'),
+    url('../assets/fonts/Hiragino Sans W3.woff') format('woff'),
+    url('../assets/fonts/Hiragino Sans W3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hiragino Sans';
+  font-weight: 600;
+  src: url('../assets/fonts/Hiragino Sans W6.woff2') format('woff2'),
+    url('../assets/fonts/Hiragino Sans W6.woff') format('woff'),
+    url('../assets/fonts/Hiragino Sans W6.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Hiragino Sans';
+  font-weight: 800;
+  src: url('../assets/fonts/Hiragino Sans W8.woff2') format('woff2'),
+    url('../assets/fonts/Hiragino Sans W8.woff') format('woff'),
+    url('../assets/fonts/Hiragino Sans W8.ttf') format('truetype');
+}
+
+$font-family-base: 'Hiragino Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-size-base: 14px;
+$line-height-base: 1.5;
+$font-weight-base: 300;

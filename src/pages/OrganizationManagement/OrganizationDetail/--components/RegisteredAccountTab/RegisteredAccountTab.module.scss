@@ -1,0 +1,29 @@
+.wrapper {
+  :global {
+    .ant-tabs-nav {
+      display: none;
+    }
+  }
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: flex-end;
+  transition: all 1s ease;
+  margin-bottom: 16px;
+  padding: 0 6%;
+
+  button {
+    font-size: var(--font-size-mini);
+  }
+
+  button:hover,
+  button.activated {
+    background-color: var(--cl-primary-600);
+    border-color: var(--cl-primary-600);
+
+    span {
+      color: var(--cl-grey-100);
+    }
+  }
+}

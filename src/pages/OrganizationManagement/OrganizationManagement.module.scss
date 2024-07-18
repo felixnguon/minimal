@@ -1,0 +1,63 @@
+.root {
+  :global {
+    .ant-input-group-wrapper {
+      width: 260px;
+      margin-right: 32px;
+    }
+  }
+}
+
+.wrapHeader {
+  margin: 32px 32px 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--cl-grey-35);
+  font-size: var(--font-size-xl);
+}
+
+.headerRightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.csvButton {
+  :global {
+    .ant-btn-text {
+      background-color: var(--cl-grey-95);
+      color: var(--cl-grey-55);
+      margin-right: 16px;
+      padding: 4px 5px;
+      border: none;
+      box-shadow: none;
+
+      svg {
+        margin-right: 9px;
+        transform: translateY(2px);
+      }
+
+      &:hover {
+        color: var(--cl-secondary-800);
+      }
+    }
+  }
+}
+
+.count {
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    color: var(--cl-grey-55);
+    font-size: var(--font-size-mini);
+    display: inline-block;
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  :global {
+    .ant-table {
+      padding-left: 24px;
+      padding-right: 16px;
+    }
+  }
+}
+
+.idColumn {
+  padding-left: 0 !important;
+}
+
+.idText {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-mini);
+}
+
+.previewColumn {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
+  button {
+    color: var(--cl-grey-55);
+    transform: translateY(20px);
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.root {
+  :global {
+    .ant-table-row-level-0 {
+      cursor: pointer;
+
+      .nameColumn {
+        a {
+          color: var(--cl-grey-35);
+          font-weight: var(--font-semi-bold);
+        }
+      }
+    }
+    td,
+    th {
+      vertical-align: middle;
+    }
+
+    thead {
+      tr {
+        th {
+          text-align: center !important;
+          padding: 4px 16px;
+        }
+      }
+    }
+  }
+}
+
+.nameColumn {
+  color: var(--cl-grey-35);
+
+  display: table-row;
+
+  .avatar {
+    width: 10%;
+    display: table-cell;
+  }
+  p {
+    width: 90%;
+    padding-left: 16px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+.idColumn,
+.dateColumn,
+.agreementStatusColumn {
+  font-size: var(--font-size-mini) !important;
+}
+
+.agreementStatusColumn {
+  :global {
+    padding: 3.5px 16px !important;
+  }
+
+  svg {
+    transform: translateY(2px);
+  }
+}
+
+.blackText {
+  color: var(--cl-grey-26);
+}
+
+.redText {
+  color: var(--cl-red-6);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}

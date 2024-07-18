@@ -1,0 +1,70 @@
+.wrapper {
+  :global {
+    .ant-table-tbody > tr > td {
+      color: var(--cl-grey-26);
+      text-align: center;
+      padding: 0;
+      height: 64px;
+      vertical-align: bottom;
+    }
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background-color: var(--cl-grey-100);
+    }
+
+    .ant-pagination.ant-table-pagination {
+      display: none;
+    }
+  }
+}
+
+.dateColumn {
+  font-size: var(--font-size-mini) !important;
+}
+
+.invalidStatus {
+  color: var(--cl-red-6);
+  font-size: var(--font-size-sm);
+}
+
+.validStatus {
+  color: var(--cl-grey-26);
+  font-size: var(--font-size-sm);
+}
+
+.cellWrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  padding: 0 16px;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  justify-content: center;
+}
+
+.isCellHover {
+  background-color: var(--cl-primary-100);
+}
+
+.duplicateWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &:hover {
+    background-color: var(--cl-primary-100);
+  }
+
+  svg {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}

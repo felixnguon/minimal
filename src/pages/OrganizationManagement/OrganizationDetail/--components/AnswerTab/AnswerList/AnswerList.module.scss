@@ -1,0 +1,126 @@
+.wrapper {
+  :global {
+    td,
+    th {
+      vertical-align: middle;
+    }
+
+    thead {
+      tr {
+        th {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  padding: 0 6%;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-xs);
+  }
+}
+
+.title {
+  color: var(--cl-grey-35);
+  font-size: var(--font-size-xl);
+  margin-top: 12px;
+}
+
+.headerRightSide {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.csvButton {
+  :global {
+    .ant-btn-default {
+      background-color: var(--cl-grey-95);
+      color: var(--cl-grey-55);
+      padding: 4px 5px;
+      border: none;
+      box-shadow: none;
+
+      &:hover {
+        color: var(--cl-secondary-800);
+
+        span {
+          color: var(--cl-secondary-800);
+        }
+      }
+
+      span {
+        transition: color 0.3s ease;
+      }
+
+      svg {
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+.count {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 6%;
+  margin-bottom: 4px;
+
+  a {
+    color: var(--cl-grey-55);
+    font-size: var(--font-size-mini);
+    display: inline-block;
+
+    span {
+      color: var(--cl-grey-26);
+    }
+  }
+}
+
+.questionTitle {
+  padding: 16px 6%;
+  background-color: var(--cl-grey-92);
+  color: var(--cl-primary-600);
+}
+
+.idColumn,
+.dateColumn {
+  font-size: var(--font-size-mini) !important;
+}
+
+.nameColumn {
+  display: table-row;
+
+  .avatar {
+    width: 10%;
+    display: table-cell;
+  }
+  p {
+    width: 90%;
+    padding-left: 16px;
+    display: table-cell;
+    vertical-align: middle;
+    color: var(--cl-grey-35);
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}

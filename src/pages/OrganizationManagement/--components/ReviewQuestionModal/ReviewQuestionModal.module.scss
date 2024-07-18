@@ -1,0 +1,65 @@
+.root {
+  :global {
+    .ant-modal-body {
+      padding: 40px 16px;
+    }
+
+    .ant-table-header {
+      display: none;
+    }
+
+    .ant-table {
+      padding-left: 16px;
+    }
+
+    .ant-table-body {
+      padding-right: 16px;
+
+      & > tr > td {
+        vertical-align: middle;
+      }
+    }
+
+    .ant-modal-header {
+      background-color: var(--cl-grey-100);
+
+      .ant-modal-title {
+        color: var(--cl-grey-15);
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-semi-bold);
+      }
+    }
+
+    .ant-modal-body {
+      background-color: var(--cl-grey-100);
+      padding: 0 0 40px 0;
+    }
+  }
+}
+
+.idText {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-mini) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.previewText {
+  text-align: start;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  button {
+    color: var(--cl-grey-55);
+    padding-right: 0;
+    padding-left: 0;
+
+    &:hover {
+      color: var(--cl-secondary-800);
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}

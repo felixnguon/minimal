@@ -1,0 +1,88 @@
+:root {
+  .ant-upload-drag {
+    width: 70%;
+  }
+
+  :global {
+    .ant-radio-group {
+      .ant-radio-wrapper:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.flexFormItem {
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+    }
+  }
+}
+
+.inlineFormItem {
+  display: inline-block;
+  margin-bottom: 0;
+
+  :global {
+    .ant-input-number {
+      width: 130px;
+    }
+  }
+}
+
+.formItemText {
+  margin: 5px 20px 0px 12px;
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+}
+
+.firstChildLabel {
+  margin-left: 0;
+}
+
+.labelNotBlur {
+  color: unset;
+}
+
+.formItemTextBottom {
+  display: inline-block;
+  transform: translateY(-36px);
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+}
+
+.subTitle {
+  font-size: var(--font-size-lg);
+  margin-bottom: 40px;
+  color: var(--cl-grey-35);
+}
+
+.childrenForm {
+  margin-bottom: 20px;
+}
+
+.actionButtons {
+  :global {
+    .ant-form-item-control-input-content {
+      margin-left: 20%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .ant-btn {
+      min-width: 120px;
+    }
+  }
+
+  margin-top: 56px;
+}
+
+.lines {
+  color: var(--cl-grey-75);
+  font-weight: 200;
+  letter-spacing: 3px;
+  height: 22px;
+  overflow: hidden;
+  margin: 80px 0;
+}

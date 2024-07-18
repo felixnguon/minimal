@@ -1,0 +1,85 @@
+.root {
+  :global {
+    td {
+      vertical-align: middle;
+    }
+
+    tr {
+      cursor: pointer;
+    }
+
+    .topicsColumn {
+      width: 350px;
+    }
+
+    td.ant-table-column-title {
+      font-size: var(--font-size-sm);
+      font-weight: 300;
+    }
+
+    td {
+      color: var(--cl-grey-26);
+      font-size: var(--font-size-mini);
+      vertical-align: middle;
+      line-height: 1.4;
+    }
+
+    td.groupColumn {
+      font-size: var(--font-size-sm);
+      color: var(--cl-grey-26);
+      font-weight: 300;
+    }
+
+    th.groupColumn {
+      text-align: center !important;
+    }
+
+    th {
+      font-size: var(--font-size-sm);
+      font-weight: 300;
+      vertical-align: middle;
+    }
+
+    .idColumn,
+    .dateColumn,
+    .dateModifiedColumn,
+    .topicsColumn {
+      font-size: var(--font-size-mini);
+    }
+
+    th.topicsColumn {
+      font-size: var(--font-size-sm);
+    }
+
+    .topicsColumn p {
+      font-size: var(--font-size-mini);
+    }
+
+    th.localeColumn,
+    td.localeColumn {
+      width: 126px !important;
+    }
+  }
+}
+
+.topics {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tooltip {
+  font-size: var(--font-size-mini);
+}
+
+.localeColumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  :global {
+    span {
+      width: calc(100% / 3);
+    }
+  }
+}

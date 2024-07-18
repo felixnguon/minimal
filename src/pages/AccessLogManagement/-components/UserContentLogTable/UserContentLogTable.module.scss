@@ -1,0 +1,69 @@
+.tableWrapper {
+  background-color: var(--cl-grey-96);
+
+  :global {
+    .ant-table-tbody > tr > td {
+      padding: 0;
+      height: 64px;
+      vertical-align: middle;
+    }
+
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background-color: var(--cl-grey-100);
+    }
+  }
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.cellWrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  padding: 0 16px;
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.isCellHover {
+  background-color: var(--cl-primary-100);
+}
+
+.downloadWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &:hover {
+    background-color: var(--cl-primary-100);
+  }
+
+  svg {
+    height: 18px;
+    width: 18px;
+
+    path:last-child {
+      fill: var(--cl-grey-55) !important;
+    }
+  }
+}
+
+.fontSizeMini {
+  font-size: var(--font-size-mini);
+}
+
+.organizationName {
+  text-align: left;
+  font-weight: var(--font-semi-bold);
+  color: var(--cl-grey-35);
+}
+
+.cellCenter {
+  justify-content: center;
+}

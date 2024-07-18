@@ -1,0 +1,12 @@
+.root {
+  :global {
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid var(--cl-grey-85);
+    }
+
+    .ant-table-tbody > tr.ant-table-row-selected > td {
+      background: transparent;
+      border-color: var(--cl-grey-85);
+    }
+  }
+}

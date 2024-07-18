@@ -1,0 +1,103 @@
+.root {
+  .ant-upload-drag {
+    width: 70%;
+  }
+
+  :global {
+    .ant-table-thead > tr > th {
+      border: 0.5px solid var(--cl-grey-85);
+    }
+
+    .ant-table-tbody > tr > td {
+      border: 0.5px solid var(--cl-grey-85);
+    }
+  }
+}
+
+.updateTimeText {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+
+  span {
+    font-size: var(--font-size-mini);
+  }
+
+  span:nth-child(1) {
+    color: var(--cl-grey-55);
+  }
+
+  span:nth-child(2) {
+    color: var(--cl-grey-26);
+  }
+}
+
+.flexFormItem {
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+    }
+  }
+}
+
+.inlineFormItem {
+  display: inline-block;
+  margin-bottom: 0;
+
+  :global {
+    .ant-input-number {
+      width: 130px;
+    }
+  }
+}
+
+.formItemText {
+  margin: 5px 20px 0px 12px;
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+}
+
+.firstChildLabel {
+  margin-left: 0;
+}
+
+.labelNotBlur {
+  color: unset;
+}
+
+.formItemTextBottom {
+  display: inline-block;
+  transform: translateY(-30px);
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-xs);
+}
+
+.subTitle {
+  font-size: var(--font-size-lg);
+  margin-bottom: 40px;
+}
+
+.childrenForm {
+  margin-bottom: 20px;
+}
+
+.extensionUsageButton {
+  margin-left: 16.66666667%;
+  margin-bottom: 40px;
+}
+
+.actionButtons {
+  :global {
+    .ant-form-item-control-input-content {
+      margin-left: 20%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .ant-btn {
+      min-width: 120px;
+    }
+  }
+
+  margin-top: 56px;
+}

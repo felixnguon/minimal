@@ -1,0 +1,141 @@
+.root {
+  font-size: var(--font-size-sm);
+
+  :global {
+    .ant-table-row-expand-icon-cell {
+      padding: 0;
+      border: 0;
+      // display: none;
+    }
+
+    .ant-table-row-level-0 .idColumn {
+      border-bottom: none !important;
+    }
+
+    tr.ant-table-expanded-row > td {
+      padding: 0;
+      background-color: var(---cl-grey-100);
+
+      > div > div {
+        margin-left: 89px;
+        border-left: 1px solid var(--cl-grey-75);
+        padding: 17px 58px;
+      }
+    }
+
+    tr {
+      cursor: pointer;
+    }
+
+    th.ant-table-row-expand-icon-cell,
+    td.ant-table-row-expand-icon-cell {
+      border-bottom: 1px solid var(--cl-grey-75);
+    }
+
+    td {
+      color: var(--cl-grey-26);
+      font-size: var(--font-size-mini);
+      vertical-align: middle;
+      line-height: 1.3;
+      padding: 14px 16px;
+    }
+
+    td.ant-table-column-title {
+      font-size: var(--font-size-sm);
+      font-weight: 300;
+    }
+
+    td.titleColumn {
+      font-size: var(--font-size-sm);
+      color: var(--cl-grey-35);
+      font-weight: 600;
+    }
+
+    th.titleColumn {
+      text-align: center !important;
+    }
+
+    .idColumn {
+      width: 90px !important;
+      font-size: var(--font-size-mini);
+    }
+
+    .dateColumn,
+    .dateModifiedColumn {
+      font-size: var(--font-size-mini) !important;
+    }
+
+    td.statusColumn {
+      font-size: var(--font-size-sm);
+      font-weight: 300;
+    }
+
+    .statusColumn {
+      border-right: 0 !important;
+
+      .ant-table-column-title {
+        font-size: var(--font-size-sm);
+      }
+    }
+
+    td.groupColumn p {
+      font-size: var(--font-size-sm) !important;
+      font-weight: 300;
+    }
+
+    th {
+      font-size: var(--font-size-sm);
+      font-weight: 300;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+  }
+}
+
+.swiperWrapper {
+  position: relative;
+  padding: 0 16px;
+
+  :global {
+    .anticon-left {
+      left: 20px;
+    }
+
+    .anticon-right {
+      right: 20px;
+    }
+
+    .anticon-left,
+    .anticon-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.swiper {
+  max-width: calc(100vw - 232px - 115px - 42px - 20px - 20px - 40px);
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  position: relative;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.localeColumn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  :global {
+    span {
+      width: calc(100% / 3);
+    }
+  }
+}

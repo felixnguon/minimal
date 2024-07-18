@@ -1,0 +1,237 @@
+.wrapper {
+  border: 1px solid var(--cl-grey-85);
+  background-color: var(--cl-grey-100);
+
+  :global {
+    .ant-table-thead > tr > th {
+      border: none;
+    }
+
+    .ant-table-tbody > tr > td {
+      border: none;
+    }
+
+    .ant-collapse-header-text {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .ant-collapse-borderless {
+      border-top: 1px solid var(--cl-grey-85);
+    }
+
+    .ant-tabs {
+      margin: 0 24px 20px 24px;
+    }
+
+    .ant-tabs-nav {
+      padding-left: 0 !important;
+      margin-bottom: 12px;
+
+      &::before {
+        border-width: 2px !important;
+        border-color: var(--cl-grey-85);
+      }
+    }
+  }
+}
+
+.header {
+  background-color: var(--cl-primary-950);
+  color: var(--cl-grey-100);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.wrapFormItem {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cl-grey-100);
+
+  div:nth-child(1):not([class*='ant']) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &.multiplyRow {
+    div:nth-child(1):not([class*='ant']) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  :global {
+    .ant-btn-link {
+      color: var(--cl-blue-6);
+    }
+
+    .ant-btn-default {
+      margin-right: 16px;
+
+      @media (max-width: 1300px) {
+        margin-right: 13px;
+      }
+    }
+
+    .ant-btn {
+      padding: 0 15px;
+      height: 24px;
+    }
+
+    @media (max-width: 1600px) {
+      .ant-btn {
+        padding: 0px 5px;
+      }
+    }
+  }
+}
+
+.flexFormItem {
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+    }
+  }
+}
+
+.inlineFormItem {
+  display: inline-block;
+  margin-bottom: 0;
+
+  :global {
+    .ant-input-number {
+      width: 130px;
+    }
+  }
+}
+
+.formItemText {
+  margin: 5px 10px 0px 6px;
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-sm);
+  display: inline-block;
+
+  &.labelNotBlur {
+    margin-bottom: 5px;
+  }
+
+  &.labelInNotEditingStatus {
+    margin-right: 5px;
+  }
+
+  &.contentInNotEditing {
+    margin-right: 0;
+  }
+
+  @media (min-width: 1600px) {
+    margin: 5px 20px 0px 12px;
+  }
+}
+
+.unitText {
+  color: var(--cl-grey-26);
+}
+
+.firstChildLabel {
+  margin-left: 0;
+}
+
+.labelNotBlur {
+  color: unset;
+}
+
+.childrenForm {
+  margin: 20px 0;
+}
+
+.hide {
+  display: none;
+}
+
+.contractQuestionsPanel {
+  background-color: var(--cl-grey-100);
+
+  :global {
+    .ant-collapse-header {
+      justify-content: center;
+
+      p {
+        font-size: var(--font-size-sm);
+        margin-left: 24px;
+        color: var(--cl-grey-26);
+      }
+    }
+
+    .ant-collapse-arrow {
+      right: 40px !important;
+
+      @media (min-width: 1600px) {
+        right: 52px !important;
+      }
+    }
+  }
+}
+
+.collapseClosed {
+  :global {
+    .ant-collapse-content-active {
+      display: none;
+    }
+  }
+}
+
+.groupEditButton {
+  button:nth-of-type(1) {
+    padding: 0 11px;
+  }
+  button:nth-of-type(2) {
+    padding: 0 9px;
+  }
+}
+
+.childElementWrapper {
+  background-color: var(--cl-grey-94);
+  border: none;
+
+  .header {
+    background-color: var(--cl-grey-85);
+    color: var(--cl-grey-15);
+  }
+
+  .wrapFormItem {
+    background-color: var(--cl-grey-94);
+  }
+
+  .questionTableWrapper {
+    padding: 0 40px;
+
+    :global {
+      .ant-table {
+        background-color: var(--cl-grey-94);
+        padding-left: 0;
+        padding-right: 0;
+
+        .ant-table-cell {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .registrationQuestionTable {
+    :global {
+      .ant-tabs {
+        // background-color: var(--cl-grey-94);
+        margin-bottom: 0;
+      }
+      .ant-table {
+        padding-left: 24px;
+        // background-color: var(--cl-grey-94);
+      }
+    }
+  }
+}

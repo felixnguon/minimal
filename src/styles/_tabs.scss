@@ -1,0 +1,19 @@
+.ant-tabs-tab:not(.ant-tabs-tab-active):hover {
+  background-color: var(--cl-grey-85);
+
+  .ant-tabs-tab-btn {
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+  margin-left: 0;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: var(--font-semi-bold);
+}
+
+.ant-tabs-tab:not(.ant-tabs-tab-active):hover .ant-tabs-tab-btn {
+  color: var(--cl-primary-600);
+}

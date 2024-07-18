@@ -1,0 +1,85 @@
+.wrapper {
+  :global {
+    td,
+    th {
+      vertical-align: middle;
+    }
+
+    thead {
+      tr {
+        th {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .ant-table-tbody {
+      .ant-table-row {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.count {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 6%;
+  margin-bottom: 4px;
+
+  a {
+    color: var(--cl-grey-55);
+    font-size: var(--font-size-mini);
+    display: inline-block;
+
+    span {
+      color: var(--cl-grey-26);
+    }
+  }
+
+  a:nth-child(1) {
+    margin-right: 24px;
+  }
+}
+
+.idColumn,
+.dateColumn {
+  font-size: var(--font-size-mini) !important;
+}
+
+.answererName {
+  width: 90%;
+  color: var(--cl-grey-35);
+  font-weight: var(--font-semi-bold);
+}
+
+.validTag,
+.beforeContractTag,
+.notValid {
+  margin-left: 32px;
+  font-size: var(--font-size-mini);
+  border-radius: 0;
+  width: 56px;
+  height: 22px;
+  text-align: center;
+  align-self: center;
+  padding: 0;
+  line-height: 20px;
+}
+
+.validTag {
+  color: var(--cl-grey-100);
+}
+
+.beforeContractTag {
+  color: var(--cl-red-6);
+}
+
+.notValid {
+  color: var(--cl-grey-15);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}

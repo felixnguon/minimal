@@ -1,0 +1,87 @@
+.root {
+  :global {
+    .ant-table {
+      border: 0.5px solid var(--cl-grey-85);
+    }
+
+    .ant-table-tbody > tr > td {
+      vertical-align: middle;
+    }
+
+    .ant-table-expanded-row {
+      td.ant-table-cell[colspan='5'] {
+        padding: 0;
+      }
+    }
+
+    .ant-table-row-expand-icon-cell {
+      border-left: none !important;
+      padding-left: 0 !important;
+
+      span {
+        transform: translateY(-4px);
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+
+    .ant-tag {
+      display: flex;
+      margin-right: 0;
+      padding: 0 7px;
+      border-radius: 0;
+      align-items: center;
+      justify-content: center;
+      width: 68px;
+      height: 22px;
+      float: right;
+      pointer-events: none;
+    }
+
+    .ant-table-row-expand-icon-cell {
+      svg {
+        transform: translateY(7px);
+      }
+    }
+  }
+}
+
+.endDateColumn {
+  border-right: none !important;
+
+  &:before {
+    width: 0px !important;
+  }
+}
+
+.statusColumn {
+  border-right: none !important;
+  border-left: none !important;
+
+  &:before {
+    width: 0px !important;
+  }
+}
+
+.expandedWrapper {
+  background-color: var(--cl-grey-94);
+
+  .deleteButton {
+    margin: 32px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: var(--cl-grey-55);
+  }
+}
+
+.notActiveTag {
+  color: var(--cl-red-5);
+}
+
+.expired {
+  color: var(--cl-grey-26);
+}
+
+.active {
+  color: var(--cl-grey-100);
+}

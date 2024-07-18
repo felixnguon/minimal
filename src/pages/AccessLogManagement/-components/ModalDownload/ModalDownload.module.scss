@@ -1,0 +1,49 @@
+.modal {
+  :global {
+    .ant-modal-body {
+      padding: 40px 80px;
+    }
+  }
+}
+
+.actionsBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 56px;
+
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .ant-btn {
+      height: 32px;
+      min-width: 120px;
+    }
+  }
+}
+
+.form {
+  :global {
+    .ant-form-item-label {
+      text-align: left;
+    }
+
+    .ant-form-item-label > label::after {
+      display: none;
+    }
+
+    .ant-form-item-label > label {
+      color: var(--cl-grey-15);
+    }
+  }
+}
+
+.arrowRightIcon {
+  path:last-child {
+    background-color: var(--cl-grey-55);
+  }
+}

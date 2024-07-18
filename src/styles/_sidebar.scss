@@ -1,0 +1,22 @@
+.ant-menu-inline-collapsed-tooltip {
+  padding-left: 0;
+
+  .ant-tooltip-arrow {
+    display: none;
+  }
+
+  .ant-tooltip-inner {
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+    background-color: var(--cl-primary-800);
+    border-radius: 0;
+    padding: 14px 20px 12px 24px;
+    height: 40px;
+  }
+}
+
+body.is-sidebar-collapsed .ant-layout-has-sider {
+  padding-left: 72px;
+  transition: all 0.2s;
+}

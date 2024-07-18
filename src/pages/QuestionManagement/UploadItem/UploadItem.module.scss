@@ -1,0 +1,48 @@
+.uploadVideoTitle {
+  margin-bottom: 12px !important;
+  color: var(--cl-grey-15);
+  font-size: var(--font-size-mini);
+}
+
+.uploadImg {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+
+    .uploadActionButtons {
+      display: block;
+      visibility: visible;
+      transition: visibility 0.3 ease-in-out;
+    }
+  }
+}
+
+.uploadActionButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  visibility: hidden;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.uploadDescription {
+  color: var(--cl-grey-26);
+}
+
+.previewModal {
+  :global {
+    .ant-modal-body {
+      padding: 12px 32px;
+    }
+  }
+}

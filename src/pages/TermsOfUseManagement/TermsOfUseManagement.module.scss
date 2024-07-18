@@ -1,0 +1,31 @@
+.root {
+  :global {
+    .ant-input-group-wrapper {
+      width: 260px;
+      margin-right: 32px;
+    }
+  }
+}
+
+.wrapHeader {
+  margin: 32px 32px 10px;
+  background-color: var(--cl-grey-96);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--cl-grey-35);
+  font-size: var(--font-size-xl);
+}
+
+.headerRightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

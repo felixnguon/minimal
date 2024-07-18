@@ -1,0 +1,36 @@
+import { DataType } from '../index'
+
+export const data: DataType[] = [
+  {
+    key: '00001',
+    year: '2023',
+    january: true,
+    february: true,
+    march: true,
+    april: true,
+    may: false,
+    june: false,
+    july: false,
+    august: false,
+    september: false,
+    october: false,
+    november: false,
+    december: false,
+  },
+  {
+    key: '00002',
+    year: '2022',
+    january: false,
+    february: false,
+    march: false,
+    april: false,
+    may: true,
+    june: true,
+    july: true,
+    august: true,
+    september: true,
+    october: true,
+    november: true,
+    december: true,
+  },
+]

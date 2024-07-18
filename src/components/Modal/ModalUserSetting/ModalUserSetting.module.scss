@@ -1,0 +1,124 @@
+.userSettingModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px 60px 40px;
+    }
+
+    .ant-form-item-required {
+      color: var(--cl-grey-15);
+
+      &::before {
+        content: '' !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    .ant-space {
+      .ant-space-item:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.avatarUploadForm {
+  position: relative;
+  margin-bottom: 12px;
+  margin-top: 8px;
+}
+
+.uploadAvatar {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  width: 32px !important;
+  height: 32px;
+
+  :global {
+    .ant-upload-select-picture-card {
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      border-radius: 50% !important;
+      border: 1px solid var(--cl-grey-85) !important;
+    }
+  }
+
+  .cameraIcon {
+    transform: translateY(2px);
+  }
+}
+
+.previewAvatar {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.textBehindAvatar {
+  width: 120px;
+  text-align: center;
+}
+
+.deleteAvatarButton {
+  span {
+    color: var(--cl-blue-6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.errorText {
+  color: var(--cl-red-6);
+  font-size: var(--font-size-mini);
+}
+
+.userSettingForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 16px;
+
+      .ant-form-item-label {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.emailFormItem {
+  margin-bottom: 28px !important;
+}
+
+.submitFormItem {
+  margin-bottom: 0 !important;
+
+  button {
+    width: 120px;
+  }
+}
+
+.userStatus {
+  span {
+    font-size: var(--font-size-mini);
+    color: var(--cl-grey-55);
+  }
+
+  span:nth-of-type(1) {
+    margin-right: 32px;
+  }
+}
+.resetPasswordButton {
+  margin-bottom: 24px;
+  padding: 4px 0 !important;
+
+  span {
+    color: var(--cl-blue-6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

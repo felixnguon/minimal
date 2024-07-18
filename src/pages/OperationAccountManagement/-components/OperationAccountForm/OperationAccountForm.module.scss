@@ -1,0 +1,50 @@
+.formRegistration {
+  :global {
+    .ant-form-item-label {
+      display: flex;
+      justify-content: flex-start;
+      width: 120px;
+      margin-right: 24px;
+    }
+
+    .ant-form-item-label > :not(.ant-form-item-required) {
+      margin-left: 12px;
+    }
+
+    .ant-form-item-label > label::after {
+      display: none;
+    }
+
+    .ant-form-item-control-input-content > .ant-input {
+      max-width: 350px;
+    }
+
+    .ant-radio-group .ant-radio-wrapper {
+      min-width: 90px;
+    }
+
+    .ant-form-item.form-item__radio-group {
+      margin-bottom: 22px;
+    }
+
+    .ant-form-item.form-item__email {
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.actionButtons {
+  :global {
+    .ant-form-item-control-input-content {
+      margin-left: 144px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .ant-btn {
+      min-width: 120px;
+    }
+  }
+
+  margin-top: 56px;
+}

@@ -1,0 +1,105 @@
+.deleteTagBtn {
+  color: var(--cl-blue-6);
+  padding: 0;
+  height: fit-content;
+
+  &:hover {
+    color: var(--cl-blue-6);
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.tagHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: var(--font-size-mini);
+  color: var(--cl-grey-15);
+}
+
+.tagsWrapper {
+  border: 1px solid var(--cl-grey-85);
+  padding: 24px;
+  background-color: var(--cl-grey-100);
+}
+
+.tags {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px 8px;
+  flex-wrap: wrap;
+
+  &.modalTags {
+    gap: 16px 12px;
+  }
+
+  :global {
+    .ant-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 0;
+      width: 80px;
+      height: 22px;
+      font-size: var(--font-size-mini);
+
+      .ant-tag-close-icon {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.note {
+  margin-top: 4px;
+  color: var(--cl-grey-55);
+}
+
+.buttonsModal {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.deleteTagModal {
+  :global {
+    .ant-modal-content {
+      .ant-modal-header {
+        background-color: var(--cl-grey-100);
+
+        .ant-modal-title {
+          color: var(--cl-grey-35);
+        }
+      }
+
+      .ant-modal-body {
+        background-color: var(--cl-grey-100);
+      }
+    }
+
+    .ant-tag-has-color .anticon-close {
+      color: var(--cl-grey-75);
+    }
+  }
+}
+
+.tagSelected {
+  color: var(--cl-grey-100);
+}
+
+.actionBtn {
+  min-width: 120px;
+  height: 32px;
+}
+
+.cancelBtn {
+  color: var(--cl-grey-55);
+}

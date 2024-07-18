@@ -1,0 +1,8 @@
+export enum ERoles {
+  ANSWERER = 0,
+  QUESTIONER,
+  ORGANIZATION_ADMIN,
+  SDG_MANAGER,
+  SDG_ADMIN,
+  SDG_NORMAL,
+}

@@ -1,0 +1,31 @@
+.head {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 32px 6% 26px 6%;
+  background-color: var(--cl-grey-96);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: var(--font-size-mini);
+  color: var(--cl-blue-6);
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-mini);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.title {
+  color: var(--cl-grey-35);
+  font-size: var(--font-size-xl);
+  margin-top: 7px;
+}

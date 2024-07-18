@@ -1,0 +1,13 @@
+.ant-tag {
+  border-radius: 5px;
+  padding: 0 12px;
+  color: var(--cl-grey-15);
+
+  &:hover {
+    background-color: var(--cl-grey-85) !important;
+
+    .anticon-close {
+      color: var(--cl-grey-55) !important;
+    }
+  }
+}

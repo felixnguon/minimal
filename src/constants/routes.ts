@@ -1,0 +1,6 @@
+export const OPERATION_ACCOUNT_MANAGEMENT = '/operation-account-management'
+export const ORGANIZATION_MANAGEMENT = '/organization-management'
+export const QUESTION_MANAGEMENT = '/question-management'
+export const TERM_OF_MANAGEMENT = '/terms-of-use-management'
+export const PRIVACY_POLICY_OF_MANAGEMENT = '/privacy-policy-management'
+export const ACCESS_LOG_MANAGEMENT = '/access-log-management'

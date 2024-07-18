@@ -1,0 +1,37 @@
+.formWrapper {
+  margin: 64px 6%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.formContent {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: var(--font-size-mini);
+  color: var(--cl-blue-6);
+
+  a {
+    margin-left: 8px;
+    color: var(--cl-blue-6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin-top: 20px;
+  color: var(--cl-grey-35);
+}
+
+.profileWrapper {
+  margin-top: 64px;
+}

@@ -1,0 +1,97 @@
+.root {
+  margin: 64px 6%;
+  display: flex;
+  justify-content: space-between;
+
+  :global {
+    .ant-tabs-tab-btn {
+      height: 20px;
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.previewBtn {
+  color: var(--cl-grey-55);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--cl-secondary-800);
+  }
+
+  span {
+    margin-left: 12px;
+  }
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  a {
+    color: var(--cl-blue-6) !important;
+    margin-left: 12px;
+    font-size: var(--font-size-mini);
+  }
+
+  &:hover {
+    a {
+      text-decoration: underline;
+      color: var(--cl-blue-6);
+    }
+  }
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  margin-top: 20px;
+  color: var(--cl-grey-35);
+  line-height: 1;
+}
+
+.tabs {
+  margin-top: 64px;
+
+  :global {
+    .ant-tabs-top > .ant-tabs-nav::before {
+      border: none;
+    }
+
+    .ant-tabs-top > .ant-tabs-nav {
+      margin-bottom: 14px;
+    }
+
+    .ant-tabs-tab {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .ant-tabs-tab .anticon {
+      margin-right: 0;
+    }
+
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin-left: 0;
+    }
+  }
+}
+
+.selectedLanguage {
+  color: var(--cl-grey-55);
+  font-size: var(--font-size-mini);
+}
+
+.form {
+  margin-top: 40px;
+}

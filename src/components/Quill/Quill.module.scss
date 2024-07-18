@@ -1,0 +1,59 @@
+.root {
+  &:hover {
+    :global {
+      .ql-container,
+      .ql-toolbar {
+        border-color: #435e8c;
+        // box-shadow: 0 0 0 2px rgb(41 70 128 / 20%);
+      }
+
+      .ql-toolbar {
+        border-bottom: none;
+      }
+    }
+  }
+  :global {
+    .ql-formats:not(:last-child) {
+      border-right: 1px solid var(--cl-grey-85);
+      padding-right: 12px;
+      margin-right: 12px;
+    }
+
+    .ql-editor {
+      color: var(--cl-grey-26);
+    }
+
+    .ql-container {
+      min-height: 215px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    .ql-editor.ql-blank::before {
+      font-style: normal;
+      font-size: var(--font-size-xs);
+      color: var(--cl-grey-75);
+    }
+  }
+}
+
+.fieldError {
+  border: 1px solid var(--cl-red-5);
+  border-radius: 2px;
+
+  :global {
+    .ql-toolbar {
+      border: none;
+    }
+
+    .ql-container {
+      border: none;
+    }
+  }
+}

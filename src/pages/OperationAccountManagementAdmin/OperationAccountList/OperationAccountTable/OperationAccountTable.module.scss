@@ -1,0 +1,67 @@
+.pagination {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.textRed {
+  color: var(--cl-red-6);
+}
+
+.registeredUser {
+  font-size: var(--font-size-mini);
+  text-align: right;
+  margin: 15px 32px 8px 32px;
+  color: var(--cl-grey-55);
+}
+
+.table {
+  color: var(--cl-grey-26);
+
+  th,
+  td {
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: var(--font-size-sm);
+  }
+
+  :global {
+    .ant-table-tbody > tr.ant-table-row {
+      cursor: pointer;
+    }
+
+    .ant-table-tbody > tr.ant-table-row:hover > td {
+      background-color: var(--cl-primary-100);
+    }
+
+    .ant-table-column-title {
+      font-size: var(--font-size-sm);
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 15px 16px 16px 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.fullName {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: var(--font-semi-bold);
+}
+
+.id,
+.registrationDate {
+  font-size: var(--font-size-mini);
+}
+
+.emailAddress {
+  text-align: left;
+}
+
+.fullName,
+.emailAddress,
+.status {
+  font-size: var(--font-size-sm);
+}

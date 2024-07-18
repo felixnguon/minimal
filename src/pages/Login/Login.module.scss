@@ -1,0 +1,104 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cl-primary-850);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :global {
+    .ant-form-item-explain {
+      display: none;
+    }
+  }
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  padding-top: 40px;
+  background-color: var(--cl-grey-100);
+
+  :global {
+    .ant-form-item-label label {
+      color: var(--cl-grey-15);
+    }
+
+    .ant-form-item-required {
+      &::before,
+      &::after {
+        content: '' !important;
+      }
+    }
+
+    .ant-input {
+      width: 400px;
+    }
+  }
+}
+
+.loginContent {
+  text-align: center;
+  width: 67%;
+  background-color: var(--cl-grey-100);
+}
+
+.titleContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: var(--cl-grey-15);
+    font-size: var(--font-size-base);
+  }
+
+  svg {
+    margin-right: 16px;
+  }
+}
+
+.userNameFormItem {
+  margin-bottom: 20px;
+  :global {
+    .ant-input {
+      width: 400px;
+    }
+  }
+}
+
+.passwordFormItem {
+  margin-bottom: 30px;
+  :global {
+    .ant-input-password {
+      width: 400px;
+    }
+  }
+}
+
+.loginText {
+  color: var(--cl-grey-35);
+  font-size: 38px;
+  margin-top: 44px;
+  margin-bottom: 28px;
+}
+
+.forgetPasswordButton {
+  margin-bottom: 32px;
+
+  span {
+    color: var(--cl-blue-6);
+    font-size: var(--font-size-xs);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.submitButton {
+  width: 120px;
+  height: 32px;
+}

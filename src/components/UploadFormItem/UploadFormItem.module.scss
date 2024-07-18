@@ -1,0 +1,144 @@
+.formUpload {
+  margin-bottom: 40px !important;
+  :global {
+    .ant-upload.ant-upload-drag {
+      margin-top: 4px;
+      border: none;
+      background-image: linear-gradient(to right, var(--cl-grey-85) 50%, transparent 50%),
+        linear-gradient(to right, var(--cl-grey-85) 50%, transparent 50%),
+        linear-gradient(to bottom, var(--cl-grey-85) 50%, transparent 50%),
+        linear-gradient(to bottom, var(--cl-grey-85) 50%, transparent 50%);
+      background-position: left top, left bottom, left top, right top;
+      background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+      background-size: 17px 1px, 17px 1px, 1px 17px, 1px 17px;
+    }
+
+    .ant-form-item-control-input-content {
+      span:not(.ant-upload) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      span.ant-upload {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      span.anticon,
+      span.ant-upload-list-item-card-actions {
+        display: inline;
+      }
+
+      span.ant-upload-span {
+        flex-direction: row;
+
+        .ant-upload-text-icon {
+          svg {
+            transform: translateY(2px);
+          }
+        }
+
+        .ant-upload-list-item-name {
+          color: var(--cl-blue-6);
+        }
+      }
+    }
+
+    .ant-upload.ant-upload-drag {
+      background-color: var(--cl-grey-100);
+    }
+
+    .ant-upload-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 4px;
+      max-width: 500px;
+
+      .ant-upload-list-text-container {
+        width: 240px;
+        margin-bottom: 8px;
+      }
+
+      .ant-upload-list-item-card-actions-btn {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.uploadField {
+  width: 100%;
+  padding: 31px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guideText {
+  color: var(--cl-grey-15);
+  text-align: initial;
+}
+
+.orText {
+  color: var(--cl-grey-55);
+  margin: 0 15px !important;
+  width: 50px;
+}
+
+.uploadedItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 224px;
+
+  div {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 30px);
+
+    a,
+    p {
+      color: var(--cl-blue-6);
+      cursor: pointer;
+      width: calc(100% - 30px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    span {
+      display: inline !important;
+      color: var(--cl-grey-55);
+    }
+  }
+
+  svg {
+    margin: 0 8px;
+    width: 14px;
+    height: 14px;
+    color: var(--cl-grey-15);
+
+    &:nth-child(2) {
+      cursor: pointer;
+      color: var(--cl-grey-75);
+    }
+  }
+
+  &.uploadedItemError {
+    div {
+      a,
+      p {
+        color: var(--cl-red-6);
+
+        span {
+          color: var(--cl-red-6);
+        }
+      }
+    }
+
+    svg {
+      color: var(--cl-red-6);
+    }
+  }
+}

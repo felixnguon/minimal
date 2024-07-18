@@ -1,0 +1,26 @@
+.wrapper {
+  background-color: var(--cl-grey-98);
+
+  :global {
+    .ant-tabs-nav {
+      padding-left: 32px;
+      margin-bottom: 10px;
+      height: 48px;
+
+      &::before {
+        border-width: 0;
+      }
+
+      .ant-tabs-tab {
+        padding: 16px 24px;
+        padding-bottom: 8px;
+        width: 82px;
+        justify-content: center;
+      }
+
+      .ant-tabs-ink-bar {
+        height: 4px;
+      }
+    }
+  }
+}
